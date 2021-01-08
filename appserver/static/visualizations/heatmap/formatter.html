@@ -1,0 +1,102 @@
+<form class="splunk-formatter-section" section-label="General">
+
+    <splunk-control-group label="Title">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.plotTitle">
+        </splunk-text-input>
+    </splunk-control-group>
+
+    <splunk-control-group label="xValue">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.xValue">
+        </splunk-text-input>
+    </splunk-control-group>
+
+
+
+    <splunk-control-group label="Reverse">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.reverse" value='1'>
+            <option value='1'>On</option>
+            <option value='0'>Off</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+</form>
+
+<form class="splunk-formatter-section" section-label="X/Y Axis">
+    <splunk-control-group label="X-Axis Label Name">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.xAxisName">
+        </splunk-text-input>
+    </splunk-control-group>
+
+
+
+    <splunk-control-group label="Y-Axis Label Name">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.yAxisName">
+        </splunk-text-input>
+    </splunk-control-group>
+
+</form>
+
+
+<form class="splunk-formatter-section" section-label="Z Axis">
+
+    <splunk-control-group label="Show Colorbar">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.showColorbar" value='1'>
+            <option value='1'>Show</option>
+            <option value='0'>Hide</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+
+
+    <splunk-control-group label="Auto Scale">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.autoScale" value='auto'>
+            <option value='auto'>Auto</option>
+            <option value='off'>Off</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+
+    <splunk-control-group label="zMin">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.zMin">
+        </splunk-text-input>
+    </splunk-control-group>
+
+
+
+    <splunk-control-group label="zMax">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.zMax">
+        </splunk-text-input>
+    </splunk-control-group>
+
+</form>
+
+
+<form class="splunk-formatter-section" section-label="Style">
+
+    <splunk-control-group label="Color Palette">
+
+        <splunk-select name="{{VIZ_NAMESPACE}}.colorPalette" value="Portland">
+            <option value="Portland">Portland</option>
+            <option value="Plotly3">Plotly3</option>
+            <option value="Viridis">Viridis</option>
+            <option value="thermal">thermal</option>
+            <option value="Bluered">Bluered</option>
+        </splunk-select>
+    </splunk-control-group>
+
+    <splunk-control-group label="xGap">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.xGap">
+        </splunk-text-input>
+    </splunk-control-group>
+
+
+
+    <splunk-control-group label="yGap">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.yGap">
+        </splunk-text-input>
+    </splunk-control-group>
+
+    <splunk-control-group label="Opacity">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.opacity">
+        </splunk-text-input>
+    </splunk-control-group>
+
+
+</form>
