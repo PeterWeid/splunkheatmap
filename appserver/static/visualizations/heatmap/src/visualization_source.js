@@ -60,6 +60,8 @@ define([
                 var opacity = parseFloat(this._getEscapedProperty('opacity', config) || '1');
                 var colorPalette = this._getEscapedProperty('colorPalette', config) || 'Portland';
                 var reverse = Boolean(Number(this._getEscapedProperty('reverse', config)));
+                var showColorbar = Boolean(Number(this._getEscapedProperty('showColorbar', config)));
+
                 var xgap = parseFloat(this._getEscapedProperty('xGap', config) || '0.05');
                 var ygap = parseFloat(this._getEscapedProperty('yGap', config) || '0.1');
                 var xPara = this._getEscapedProperty('xValue', config) || "timestamp";
@@ -144,7 +146,7 @@ define([
                     y: yValues,
                     z: zValues,
                     type: 'heatmap',
-                    showscale: true,
+                    showscale: showColorbar,
                     colorscale: colorPalette,
                     zmin: zminVal,
                     zmax: zmaxVal,
