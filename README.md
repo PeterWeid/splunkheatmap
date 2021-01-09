@@ -5,7 +5,7 @@ This is a custom visualization for Splunk which uses the plotly js library toget
 This Repo currently contains the following visualizations:
 - heatmap
 
-![Alt text](heatmap.jpg?raw=true "example of the visualization")
+![Alt text](heatmap.png?raw=true "example of the visualization")
 
 ## Installation
 
