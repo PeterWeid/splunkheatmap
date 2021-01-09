@@ -6,6 +6,7 @@ This Repo currently contains the following visualizations:
 - heatmap
 
 ![Alt text](heatmap.png?raw=true "example of the visualization")
+![Alt text](heatmap_settings.png?raw=true "example of the visualization")
 
 ## Installation
 
