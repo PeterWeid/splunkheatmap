@@ -5,6 +5,8 @@ This is a custom visualization for Splunk which uses the plotly js library toget
 This Repo currently contains the following visualizations:
 - heatmap
 
+![Alt text](heatmap.jpg?raw=true "example of the visualization")
+
 ## Installation
 
 - Download and install Splunk
@@ -22,4 +24,7 @@ This Repo currently contains the following visualizations:
 * Format the visualization as needed
 * The field name of xValues can be changed in the formatting menu
 
+### Style Menu
 
+The app allows for some custom modifications. Currently the following settings are implemented:
+![Alt text](menu.001.png?raw=true "the style menu")
