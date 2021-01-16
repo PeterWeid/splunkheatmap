@@ -1,5 +1,5 @@
 # Plotly Custom Visualization for Splunk
-
+This app has been published on [Splunkbase](https://splunkbase.splunk.com/app/5387/).
 This is a custom visualization for Splunk which uses the plotly js library together with the Splunk custom visualization API.
 
 This Repo currently contains the following visualizations:
