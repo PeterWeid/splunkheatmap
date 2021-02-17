@@ -3,7 +3,7 @@
  */
 define([
     'jquery',
-    'underscore',
+    //'underscore',
     'plotly.js-dist',
     'api/SplunkVisualizationBase',
     'api/SplunkVisualizationUtils'
@@ -11,7 +11,7 @@ define([
 ],
     function (
         $,
-        _,
+        //_,
         Plotly,
         SplunkVisualizationBase,
         SplunkVisualizationUtils
@@ -22,7 +22,7 @@ define([
 
             initialize: function () {
                 SplunkVisualizationBase.prototype.initialize.apply(this, arguments);
-                this.$el = $(this.el);
+                
 
                 // this.$el.append('<h3>This is a custom visualization stand in.</h3>');
                 // this.$el.append('<p>Edit your custom visualization app to render something here.</p>');
@@ -30,7 +30,7 @@ define([
                 // Initialization logic goes here
                 // Handle multiple Graphs
                 this.__uniqueID = Math.floor(Math.random() * 100000);
-
+                this.$el = $(this.el);
                 // Add a css selector class
                 this.$el.attr('id', 'heatmapContainer_' + this.__uniqueID);
             },
@@ -40,7 +40,7 @@ define([
             formatData: function (data) {
 
                 // Format data 
-                console.log("test");
+                //console.log("test");
                 return data;
             },
 
@@ -49,7 +49,7 @@ define([
             //  'config' will be the configuration property object
             updateView: function (data, config) {
 
-                console.log(JSON.stringify(config));
+                //console.log(JSON.stringify(config));
 
 
                 //get info from config
@@ -68,6 +68,10 @@ define([
 
                 var zmin = parseFloat(this._getEscapedProperty('zMin', config) || '0');
                 var zmax = parseFloat(this._getEscapedProperty('zMax', config) || '1');
+
+                // Cleanup previous data
+                Plotly.purge('heatmapContainer_' + this.__uniqueID);
+                $('#' + this.id).empty();
 
                 // get xValues, zValues and y Values for the heatmap plot
 
